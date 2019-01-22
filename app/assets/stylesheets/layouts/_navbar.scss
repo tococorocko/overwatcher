@@ -1,14 +1,25 @@
+.mobile_nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.inline {
+  display: inline;
+}
 #logo {
-  float: left;
+  // float: left;
   margin-right: 10px;
-  font-size: 1.7em;
+  font-size: 3vh;
   color: $light-gray;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  display: inline;
   &:hover {
   color: $light-gray;
   text-decoration: none;
   }
 }
+
+
