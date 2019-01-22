@@ -13,5 +13,20 @@
 }
 
 .oversumo_logo {
-  height: 50vh;
+  height: 40vh;
+}
+
+.cta {
+  display: flex;
+  background: white;
+  margin: 60px;
+  align-items: center;
+}
+.oversumo_text {
+  h3 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 12px;
+  }
 }
