@@ -1,0 +1,26 @@
+footer {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #2B2B2B;
+  a {
+  color: #2B2B2B;
+    &:hover {
+    color: #2B2B2B;
+    opacity: 0.6;
+    }
+  }
+  small {
+  float: left;
+  }
+  ul {
+  float: right;
+  list-style: none;
+    li {
+    float: left;
+    margin-left: 15px;
+    }
+  }
+}
