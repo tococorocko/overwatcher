@@ -1,2 +1,16 @@
-<h1>Heroes#index</h1>
-<p>Find me in app/views/heroes/index.html.erb</p>
+<% provide(:title, "Overwatch Heroes") %>
+
+<div class="container">
+  <h1>Overwatch Heroes</h1>
+  <p>All current Overwatch Heroes! Click on Hero for more Info</p>
+
+  <div class="container">
+  <%= form_tag(root_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Hero" %>
+  <%= submit_tag "Search" %>
+  <% end %>
+  </div>
+
+  <%= render 'heroes' %>
+
+</div>
