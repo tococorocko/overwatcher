@@ -1,6 +1,6 @@
 # Ruby on Rails application to browse your favourite Overwatch hero!
 
-This is the Code Challenge.
+This is a Code Challenge.
 
 ## License
 
@@ -20,7 +20,7 @@ Next, migrate the database:
 $ rails db:migrate
 ```
 
-Next, get the heroese:
+Next, get the heroes:
 
 ```
 $ rails db:seed
