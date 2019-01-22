@@ -1,7 +1,24 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'rest-client'
+
+puts "Clean database"
+puts "..."
+
+Hero.destroy_all
+puts "Cleaned"
+
+
+puts "Get all Heroes from API"
+puts "..."
+
+list = RestClient.get "https://s3.eu-central-1.amazonaws.com/dojomadness.com/code-challenge/heros"
+heroes = JSON.parse(list)
+heroes['data'].each do |hero|
+  Hero.create(
+    name: hero['attributes']['name'],
+    portrait: hero['attributes']['image_portrait'],
+    background: hero['attributes']['image_splash'],
+    link: "https://playoverwatch.com/en-us/heroes/#{(hero['attributes']['name']).downcase}"
+  )
+end
+
+puts "Done"
