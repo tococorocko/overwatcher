@@ -4,11 +4,11 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #2B2B2B;
+  color: $gray;
   a {
-  color: #2B2B2B;
+  color: $gray;
     &:hover {
-    color: #2B2B2B;
+    color: $gray;
     opacity: 0.6;
     }
   }
