@@ -1,1 +1,39 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# Ruby on Rails application to browse your favourite Overwatch hero!
+
+This is the Code Challenge.
+
+## License
+
+```
+
+## Getting started
+
+To get started with the app, clone the repo and then install the needed gems:
+
+```
+$ bundle install --without production
+```
+
+Next, migrate the database:
+
+```
+$ rails db:migrate
+```
+
+Next, get the heroese:
+
+```
+$ rails db:seed
+```
+
+Finally, run the test suite to verify that everything is working correctly:
+
+```
+$ rails test
+```
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
