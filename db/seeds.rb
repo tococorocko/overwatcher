@@ -17,7 +17,7 @@ heroes['data'].each do |hero|
     name: hero['attributes']['name'],
     portrait: hero['attributes']['image_portrait'],
     background: hero['attributes']['image_splash'],
-    link: "https://playoverwatch.com/en-us/heroes/#{(hero['attributes']['name']).downcase}"
+    link: "https://playoverwatch.com/en-us/heroes/#{(hero['attributes']['slug']).downcase}"
   )
 end
 

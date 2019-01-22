@@ -1,0 +1,17 @@
+<head>
+  <%= favicon_link_tag %>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="theme-color" content=#0D730A />
+  <title><%= full_title(yield(:title)) %></title>
+  <meta name="description" content="Find information about your favourite hero in Overwatch!">
+  <meta name="keywords" content="Overwatch, Gaming, Heroes, Information, Dojo Madness">
+  <meta name="author" content="Lucca Kaiser">
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all',
+                                            'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <!-- Partial for older IE browser -->
+  <%= render 'layouts/shim' %>
+</head>

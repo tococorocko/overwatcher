@@ -4,12 +4,12 @@
       <div class="col-xs-12 col-sm-4">
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%="#{hero.background}"%>');">
             <!-- Class?! -->
-            <div class="card-category">Class:</div>
+            <div class="card-category">Hero</div>
             <div class="card-description">
               <h2> <%= hero.name %> </h2>
             </div>
             <%= image_tag "#{hero.portrait}", alt: "alttext", class:"card-hero" %>
-          <%= link_to "#{hero.link}", class: "card-link" do %>
+          <%= link_to "#{hero.link}", class: "card-link", :target => "_blank" do %>
           <% end %>
         </div>
       </div>
