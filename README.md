@@ -1,4 +1,4 @@
-# Ruby on Rails application to browse your favourite Overwatch hero!
+# Ruby on Rails application to browse your favourite Overwatch heroes!
 
 This is a Code Challenge.
 
