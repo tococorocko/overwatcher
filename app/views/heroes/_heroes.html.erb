@@ -9,7 +9,7 @@
               <h2> <%= hero.name %> </h2>
             </div>
             <%= image_tag "#{hero.portrait}", alt: "alttext", class:"card-hero" %>
-          <%= link_to "#{hero.link}", class: "card-link" do %>
+          <%= link_to "#{hero.link}", class: "card-link", :target => "_blank" do %>
           <% end %>
         </div>
       </div>

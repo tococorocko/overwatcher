@@ -12,19 +12,12 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-  h1 {
-  margin-bottom: 10px;
-  }
-}
-
 /* typography */
 
 a {
   color: white;
   &a:hover {
-  color: #4D2F78;
+  color: #2B2B2B;
   text-decoration: none;
   }
 }
@@ -34,10 +27,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-family: "Roboto";
+  font-size: 6vw;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -50,6 +45,7 @@ h2 {
 }
 
 p {
+  text-align: center;
   font-size: 1.1em;
   line-height: 1.7em;
 }
